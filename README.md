@@ -2,12 +2,19 @@
 
 ## Installation
 
-1. Installing all requires packages
- ```npm i ```
-2. Starting API service on 3000 port (Make sure the port is not in use. If not change the port number in index.js)
-```npm start```
+### Installing all requires packages
+ 
+ ```
+ npm i 
+ ```
+### Starting API service on 3000 port (Make sure the port is not in use. If not change the port number in index.js).
 
-Now visit http://localhost:3000/ ( I have created a demo page to test the api)
+
+```
+npm start
+```
+
+Now visit http://localhost:3000/ this is your API endpoint( I have created a demo page to test the API)
 
 This API support 5 languages
 C, C++, Java, Python , Javascript/nodejs
