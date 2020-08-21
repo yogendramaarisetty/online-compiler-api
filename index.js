@@ -4,6 +4,7 @@ const {c, cpp, node, python, java} = require('compile-run');
 const path = require('path');  
 var bodyParser = require('body-parser');
 const {reqValidation} = require('./validation');
+let port = process.env.PORT || 3000;
 // data = {
 //     "language_id": language.id,
 //     "source_code": code,
@@ -94,4 +95,4 @@ app.post('/',async (req, res) =>{
     run_code(req.body,res);
     }
 })
-app.listen(3000 , ()=> console.log("Port is running on 3000"));
+app.listen(port , ()=> console.log(`Node API  is running on ${port}`));
