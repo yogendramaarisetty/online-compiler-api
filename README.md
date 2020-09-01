@@ -1,14 +1,40 @@
 # Online Compiler RestAPI built using NodeJs
 
-## Installation
+## Heroku Deployment
+go to your root dir and create your docker file with required dependencies
 
-### Installing all requires packages
- 
+1. Create an app in heroku
+```
+    heroku create -a <your-app-name>
+```
+
+2.Push your container 
+```
+    heroku container:push web -a <your-app-name>
+```
+
+3.Finally release your app with
+
+```
+    heroku container:release web -a <your-app-name>
+```
+# TADA! your app is published at <your-app-name>/herokuapp.com
+
+## Installation in your local
+
+> Go to root directory **online-compiler-api/** and run following commands
+
+1. Build docker image (this may take some time)
+
  ```
- npm i 
+ docker build -t online-compiler-api
  ```
+
+2. Run the container
+```
+docker run -p 3000:3000 online-compiler
+```
 ### Starting API service on 3000 port (Make sure the port is not in use. If not change the port number in index.js).
-
 
 ```
 npm start
